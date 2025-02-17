@@ -9,7 +9,7 @@ const server = createFlutterLodzServer({
     let newManagement = StateManagement.create({
       id: stateManagements.length.toString(),
       name: request.name,
-      rating: Math.floor(Math.random() * 11),
+      rating: Math.floor(Math.random() * 10)+1,
     });
     stateManagements.push(newManagement);
     return newManagement;
